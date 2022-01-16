@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FlexBox</title>
+    
+    <style>
+       *{
+           margin: 0;
+           padding: 0;
+        }
+       .container{
+           display: flex;
+           /* height: 600px; */
+
+           /* align-items: strech; */
+           /* align-items: flex-start; */
+           /* align-items: flex-end; */
+           /* align-items: center; */
+
+           /* flex-direction: row; */
+           /* flex-direction: column; */
+           /* flex-direction: row-reverse; */
+           /* flex-direction: column-reverse; */
+
+           /* justify-content: space-between; */
+           /* justify-content: space-around; */
+           /* justify-content: space-evenly; */
+           /* justify-content: flex-start; */
+           /* justify-content: flex-end; */
+           /* justify-content: center; */
+            
+            margin-right: -30px;
+
+       }
+       
+       .container div{
+         background-color: aqua;
+         border: 2px solid red;
+         padding: 20px;
+         /* width: 20%; */
+         /* flex-basis: 20%; */
+         margin-right: 30px;
+       }
+
+       .item-1{
+        /* flex: 2; */
+        /* order: 3; */
+       }
+
+       .item-2{
+        /* flex: 2; */
+        /* order: 1; */
+       }
+
+       .item-3{
+        /* flex: 1; */
+        /* order : 2; */
+       }
+
+       @media (max-width: 480px){
+           .container{
+             flex-direction: column;
+           }
+           .container div{
+               background-color: blue;
+           }
+       }
+
+       @media (max-width: 700px){
+           .container{
+             flex-direction: column;
+             background-color: blueviolet;
+           }
+       }
+
+    </style>
+
+
+
+</head>
+<body>
+
+     
+    <div class="container">
+        
+        <div class="item-1">
+            <h1>My item 1</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi provident pariatur a numquam quos quia blanditiis illo quaerat molestias maiores incidunt distinctio debitis, alias exercitationem nam at consequatur praesentium doloremque?</p>
+        </div>
+
+        <div class="item-2">
+            <h1>My item 2</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi provident pariatur a numquam quos quia blanditiis illo quaerat molestias maiores incidunt distinctio debitis, alias exercitationem nam at consequatur praesentium doloremque?</p>
+        </div>
+
+        <div class="item-3">
+            <h1>My item 3</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi provident pariatur a numquam quos quia blanditiis illo quaerat molestias maiores incidunt distinctio debitis, alias exercitationem nam at consequatur praesentium doloremque?</p>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+</body>
+</html>
